@@ -1,0 +1,23 @@
+<template name="Create_company">
+    <form id="createCompanyForm" class='validate'>
+        <h1>Crear empresa</h1>
+        <div class="form-group {{#if nameError}}has-error{{/if}}">
+            <label for="companyName">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" id="companyName" data-required
+                   data-msg="El nombre es obligatorio"/>
+            <span class="help-block err-msg"></span>
+        </div>
+        <div class="form-group {{#if categoryError}}has-error{{/if}}">
+            <label for="companyCategory">Categoría</label>
+            <select class="form-control" id="companyCategory">
+                <option disabled selected>Seleccionar categoría</option>
+                {{#each category in categories}}
+                    <option id="{{category}}">{{category}}</option>
+                {{else}}
+                    <option>No hay categorías</option>
+                {{/each}}
+            </select>
+        </div>
+        <button type='submit' class="btn btn-default" id="createCompany">Crear</button>
+    </form>
+</template>

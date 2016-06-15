@@ -1,0 +1,9 @@
+<template name="App_main">
+    <button id="companies">Empresas</button>
+    <button id="contacts">Contactos</button>
+    <div class="list-group">
+        {{#each company in companies}}
+            <a class="list-group-item" href="/company/{{company.slug}}">{{company.name}}</a>
+        {{/each}}
+    </div>
+</template>

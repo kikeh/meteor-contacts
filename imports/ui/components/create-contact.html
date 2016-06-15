@@ -1,0 +1,22 @@
+<template name="Create_contact">
+    <form id="createContactForm" class='validate'>
+        <h1>Crear contacto de {{company.name}}</h1>
+        <div class="form-group {{#if nameError}}has-error{{/if}}">
+            <label for="contactName">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" id="contactName"/>
+        </div>
+        <div class="form-group {{#if phoneError}}has-error{{/if}}">
+            <label for="contactPhone">Teléfono</label>
+            <input type="text" class="form-control" placeholder="Teléfono" id="contactPhone"/>
+        </div>
+        <div class="form-group {{#if emailError}}has-error{{/if}}">
+            <label for="contactEmail">Email</label>
+            <input type="text" class="form-control" placeholder="Email" id="contactEmail"/>
+        </div>
+        <button type='submit' class="btn btn-default" id="assignContact">Crear</button>
+    </form>
+</template>
+
+<template name="companyPill">
+    <span class="">{{name}}</span>
+</template>

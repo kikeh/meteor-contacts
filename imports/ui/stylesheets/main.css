@@ -1,0 +1,12 @@
+.editable-field-off {
+    border: 0;
+    cursor: default !important;
+    background: #FFF !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.editable-field-on {
+
+}
