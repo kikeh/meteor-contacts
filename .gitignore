@@ -1,0 +1,11 @@
+# General
+*.*~
+
+# Meteor
+# .meteor/local
+
+# Node
+node_modules/
+
+# Intellij Idea
+.idea/
