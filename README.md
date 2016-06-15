@@ -1,3 +1,3 @@
 # Conctacts
 
-Meteor application for managing an agenda for contacting clients.
+Meteor application for managing and contacting clients.
